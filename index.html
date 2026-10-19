@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Nizam Bajud - BCA Student at Dr. Subhash University, specializing in Data Analytics through the L&T program, Artificial Intelligence & Software Engineering.">
+  <meta name="keywords" content="Nizam Bajud, Portfolio, Data Analytics, Dr Subhash University, L&T, BCA, Artificial Intelligence, Web Developer, Junagadh Gujarat">
+  <meta name="author" content="Nizam Bajud">
+  <title>Nizam Bajud | Data Analytics Specialist & BCA Student</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Interactive 3D Canvas Background -->
+  <div id="bg-canvas-container">
+    <canvas id="three-canvas"></canvas>
+  </div>
+  <div class="ambient-vignette"></div>
+  <div class="ambient-grid"></div>
+  <div class="cursor-glow"></div>
+
+  <!-- Main Application Wrapper -->
+  <div id="site-wrapper">
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="#hero" class="brand-logo" aria-label="Nizam Bajud Home">
+          <div class="brand-icon">NB</div>
+          <div class="brand-text">NIZAM <span>BAJUD</span></div>
+        </a>
+
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="btn-icon-toggle" id="sound-toggle-btn" title="Toggle Sound FX" aria-label="Toggle Sound Effects">
+            <i class="fas fa-volume-mute"></i>
+          </button>
+          <a href="#" class="nav-cta open-resume-btn">
+            <i class="fas fa-file-alt"></i> Resume
+          </a>
+          <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-content">
+            <div class="status-badge">
+              <span class="status-pulse"></span>
+              <span>Available for Internships & Projects | Junagadh, Gujarat</span>
+            </div>
+
+            <h1 class="hero-title">
+              <span class="greeting">Hello, world! I am</span>
+              <span class="highlight-name">Nizam Bajud</span>
+            </h1>
+
+            <div class="typewriter-container">
+              <span>&gt; </span>
+              <span id="typewriter-text"></span>
+              <span class="typing-cursor"></span>
+            </div>
+
+            <p class="hero-summary">
+              Pursuing a Bachelor of Computer Applications (BCA) at Dr. Subhash University and specializing in 
+              <strong style="color: #fff;">Data Analytics through the L&T program</strong>. Skilled in C, C++, PHP, MySQL, JavaScript, 
+              and passionate about Artificial Intelligence and building impactful software solutions.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn-primary">
+                <span>Explore Projects</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="#contact" class="btn-secondary">
+                <i class="fas fa-envelope"></i>
+                <span>Get In Touch</span>
+              </a>
+              <button class="btn-secondary open-resume-btn" style="cursor: pointer;">
+                <i class="fas fa-eye"></i>
+                <span>View Resume</span>
+              </button>
+            </div>
+
+            <div class="hero-social-links">
+              <a href="mailto:bajudnizam@gmail.com" class="social-pill" title="Email Nizam">
+                <i class="fas fa-envelope"></i> bajudnizam@gmail.com
+              </a>
+              <a href="tel:+918200335213" class="social-pill" title="Call Nizam">
+                <i class="fas fa-phone-alt"></i> +91 8200335213
+              </a>
+              <span class="social-pill">
+                <i class="fas fa-map-marker-alt"></i> Junagadh, Gujarat
+              </span>
+            </div>
+          </div>
+
+          <!-- Hero Visual / 3D Profile Frame -->
+          <div class="hero-visual">
+            <div class="cyber-card-frame">
+              <div class="card-top-bar">
+                <div class="terminal-dots">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <div class="terminal-tag">BCA_ANALYTICS_CORE.exe</div>
+              </div>
+
+              <div class="avatar-wrapper">
+                <div class="avatar-ring"></div>
+                <div class="avatar-core">
+                  <i class="fas fa-user-astronaut"></i>
+                </div>
+              </div>
+
+              <div style="text-align: center;">
+                <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: #fff;">Nizam Bajud</h3>
+                <p style="font-size: 0.85rem; color: var(--accent-cyan); font-family: var(--font-mono); margin-top: 2px;">
+                  Dr. Subhash University &bull; L&T Program
+                </p>
+              </div>
+
+              <div class="quick-stats-grid">
+                <div class="stat-box">
+                  <span class="stat-number">9.10</span>
+                  <span class="stat-label">Current SGPA</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-number">Rank #1</span>
+                  <span class="stat-label">L&T Sem 1 & 2</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-number">90.1%</span>
+                  <span class="stat-label">HSC Class 12</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-number">3+</span>
+                  <span class="stat-label">Certifications</span>
+                </div>
+              </div>
+
+              <!-- Floating Badges -->
+              <div class="floating-chip chip-1">
+                <i class="fas fa-chart-line" style="color: var(--accent-cyan);"></i>
+                <span>Data Analytics Specialist</span>
+              </div>
+              <div class="floating-chip chip-2">
+                <i class="fas fa-brain" style="color: #a855f7;"></i>
+                <span>AI & ML Enthusiast</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fas fa-id-badge"></i> Biography</div>
+          <h2 class="section-title">About Nizam Bajud</h2>
+          <p class="section-subtitle">Dedicated computer science student with a dual focus on data-driven intelligence and robust software development.</p>
+        </div>
+
+        <div class="about-grid">
+          
+          <div class="about-bio">
+            <div class="glass-card bio-card">
+              <p>
+                I am currently pursuing my <span class="bio-highlight">Bachelor of Computer Applications (BCA)</span> at 
+                <span class="bio-highlight">Dr. Subhash University</span>, slated for completion in 2028. My primary academic distinction is 
+                specializing in <span class="bio-highlight">Data Analytics through the esteemed Larsen & Toubro (L&T) program</span>, where I have 
+                consistently proven academic excellence by securing <span class="bio-highlight">1st Rank in both Semester 1 and Semester 2</span>.
+              </p>
+              <p>
+                My technical toolkit spans procedural and object-oriented programming in <strong>C and C++</strong>, server-side development in 
+                <strong>PHP</strong>, relational databases in <strong>MySQL</strong>, and responsive web frontend engineering with 
+                <strong>HTML5, CSS3, Bootstrap, and modern JavaScript (ES6)</strong>.
+              </p>
+              <p>
+                Driven by a deep curiosity for <span class="bio-highlight">Artificial Intelligence and Machine Learning</span>, I have completed certifications with 
+                <strong>IBM</strong> and <strong>Be10X</strong>, seeking to bridge traditional software development with modern predictive modeling and automated workflows.
+              </p>
+            </div>
+
+            <div class="glass-card languages-box">
+              <h4 style="font-size: 0.95rem; font-weight: 600; color: #fff; display: flex; align-items: center; gap: 0.5rem;">
+                <i class="fas fa-language" style="color: var(--accent-cyan);"></i> Spoken Languages
+              </h4>
+              <div class="languages-list">
+                <span class="lang-badge"><i class="fas fa-globe"></i> English</span>
+                <span class="lang-badge"><i class="fas fa-globe"></i> Hindi</span>
+                <span class="lang-badge"><i class="fas fa-globe"></i> Gujarati</span>
+                <span class="lang-badge"><i class="fas fa-globe"></i> Urdu</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Info Cards -->
+          <div class="quick-facts-grid">
+            <div class="glass-card fact-item">
+              <div class="fact-icon"><i class="fas fa-graduation-cap"></i></div>
+              <div class="fact-title">Degree In Progress</div>
+              <div class="fact-value">BCA (2028 Batch)</div>
+              <span style="font-size: 0.8rem; color: var(--accent-cyan);">Dr. Subhash University</span>
+            </div>
+
+            <div class="glass-card fact-item">
+              <div class="fact-icon"><i class="fas fa-chart-pie"></i></div>
+              <div class="fact-title">Specialization</div>
+              <div class="fact-value">Data Analytics</div>
+              <span style="font-size: 0.8rem; color: var(--accent-cyan);">L&T Integrated Program</span>
+            </div>
+
+            <div class="glass-card fact-item">
+              <div class="fact-icon"><i class="fas fa-map-marked-alt"></i></div>
+              <div class="fact-title">Location</div>
+              <div class="fact-value">Junagadh, Gujarat</div>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">India (Open to Relocate / Remote)</span>
+            </div>
+
+            <div class="glass-card fact-item">
+              <div class="fact-icon"><i class="fas fa-award"></i></div>
+              <div class="fact-title">Academic Merit</div>
+              <div class="fact-value">9.10 SGPA</div>
+              <span style="font-size: 0.8rem; color: #f59e0b;">College 3rd Rank & L&T 1st Rank</span>
+            </div>
+
+            <div class="glass-card fact-item" style="grid-column: 1 / -1;">
+              <div class="fact-icon"><i class="fas fa-lightbulb"></i></div>
+              <div class="fact-title">Key Soft Skills</div>
+              <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 0.5rem;">
+                <span class="tag-pill" style="color: #fff;"><i class="fas fa-check" style="color:var(--accent-cyan);"></i> Communication</span>
+                <span class="tag-pill" style="color: #fff;"><i class="fas fa-check" style="color:var(--accent-cyan);"></i> Collaborative Teamwork</span>
+                <span class="tag-pill" style="color: #fff;"><i class="fas fa-check" style="color:var(--accent-cyan);"></i> Quick & Self-Directed Learning</span>
+                <span class="tag-pill" style="color: #fff;"><i class="fas fa-check" style="color:var(--accent-cyan);"></i> Analytical Problem Solving</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fas fa-university"></i> Academic Timeline</div>
+          <h2 class="section-title">Education & Milestones</h2>
+          <p class="section-subtitle">Consistent academic high-achiever with strong analytical foundations.</p>
+        </div>
+
+        <div class="timeline-container">
+          
+          <!-- Milestone 1: BCA -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-degree">Bachelor of Computer Applications (BCA)</h3>
+                  <div class="timeline-institution">
+                    <i class="fas fa-school"></i> Dr. Subhash University &bull; Gujarat, India
+                  </div>
+                </div>
+                <div class="timeline-badge">
+                  <i class="fas fa-star" style="color:#f59e0b;"></i> Pursuing (9.10 SGPA)
+                </div>
+              </div>
+              <div class="timeline-body">
+                Currently pursuing full-time BCA degree with dedicated industry specialization in <strong>Data Analytics through the Larsen & Toubro (L&T) program</strong>.
+                Consistently ranked at the top of the batch with foundational coursework in computational logic, relational database management, data structures, and modern software design.
+              </div>
+              <div class="timeline-tags">
+                <span class="tag-pill">Year of Completion: 2028</span>
+                <span class="tag-pill">SGPA: 9.10</span>
+                <span class="tag-pill">1st Rank L&T Sem 1 & 2</span>
+                <span class="tag-pill">3rd Rank College Sem 2</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 2: Class 12 -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-degree">Higher Secondary Certificate (Class 12)</h3>
+                  <div class="timeline-institution">
+                    <i class="fas fa-school"></i> Alpha High School &bull; Gujarat Board
+                  </div>
+                </div>
+                <div class="timeline-badge" style="background: rgba(16,185,129,0.1); color: #10b981; border-color: rgba(16,185,129,0.3);">
+                  <i class="fas fa-trophy"></i> 90.1% Distinction
+                </div>
+              </div>
+              <div class="timeline-body">
+                Graduated with distinction scoring an exceptional <strong>90.1%</strong> in the Gujarat Secondary and Higher Secondary Education Board exams. Built deep foundations in mathematics, logical reasoning, and computer fundamentals.
+              </div>
+              <div class="timeline-tags">
+                <span class="tag-pill">Passing Year: 2025</span>
+                <span class="tag-pill">Gujarat State Board</span>
+                <span class="tag-pill">Academic Distinction</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 3: Class 10 -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-degree">Secondary School Certificate (Class 10)</h3>
+                  <div class="timeline-institution">
+                    <i class="fas fa-school"></i> Alpha High School &bull; Gujarat Board
+                  </div>
+                </div>
+                <div class="timeline-badge" style="background: rgba(255,255,255,0.05); color: var(--text-secondary); border-color: var(--border-subtle);">
+                  <span>66.0%</span>
+                </div>
+              </div>
+              <div class="timeline-body">
+                Completed secondary school education with fundamental focus in general sciences, computational thinking, and linguistic proficiency across regional and international languages.
+              </div>
+              <div class="timeline-tags">
+                <span class="tag-pill">Passing Year: 2023</span>
+                <span class="tag-pill">Gujarat Board</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fas fa-code"></i> Technical Stack</div>
+          <h2 class="section-title">Skills & Competencies</h2>
+          <p class="section-subtitle">Proficiencies developed through academic programs, practical software solutions, and specialized certifications.</p>
+        </div>
+
+        <div class="skills-wrapper">
+          
+          <!-- Category 1: Programming Languages -->
+          <div class="glass-card skill-category-card">
+            <div class="category-header">
+              <div class="category-icon"><i class="fas fa-laptop-code"></i></div>
+              <div class="category-title">Programming Languages</div>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fas fa-terminal" style="color:var(--accent-cyan);"></i> C Language</span>
+                  <span style="color:var(--accent-cyan);">85%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="85%"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fas fa-code-branch" style="color:#3b82f6;"></i> C++ (OOP & Logic)</span>
+                  <span style="color:#3b82f6;">82%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="82%"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fab fa-php" style="color:#8b5cf6;"></i> PHP</span>
+                  <span style="color:#8b5cf6;">80%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="80%"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fab fa-js" style="color:#f59e0b;"></i> JavaScript (ES6+)</span>
+                  <span style="color:#f59e0b;">85%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="85%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Web & Database -->
+          <div class="glass-card skill-category-card">
+            <div class="category-header">
+              <div class="category-icon"><i class="fas fa-layer-group"></i></div>
+              <div class="category-title">Web & Database</div>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fab fa-html5" style="color:#ef4444;"></i> HTML5 & Semantic UI</span>
+                  <span style="color:#ef4444;">92%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="92%"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fab fa-css3-alt" style="color:#38bdf8;"></i> CSS3 & Responsive Design</span>
+                  <span style="color:#38bdf8;">88%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="88%"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fab fa-bootstrap" style="color:#a855f7;"></i> Bootstrap Framework</span>
+                  <span style="color:#a855f7;">86%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="86%"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fas fa-database" style="color:#00f0ff;"></i> MySQL Relational Database</span>
+                  <span style="color:#00f0ff;">84%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="84%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Data Analytics & Productivity -->
+          <div class="glass-card skill-category-card">
+            <div class="category-header">
+              <div class="category-icon"><i class="fas fa-chart-line"></i></div>
+              <div class="category-title">Data Analytics & Tools</div>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fas fa-file-excel" style="color:#10b981;"></i> MS Excel (Interactive Dashboards)</span>
+                  <span style="color:#10b981;">92%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="92%"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fas fa-robot" style="color:#00f0ff;"></i> AI & Machine Learning Foundations</span>
+                  <span style="color:#00f0ff;">80%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="80%"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fas fa-code" style="color:#38bdf8;"></i> VS Code & Dev-C++</span>
+                  <span style="color:#38bdf8;">90%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="90%"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fab fa-windows" style="color:#3b82f6;"></i> Windows OS & MS Office Suite</span>
+                  <span style="color:#3b82f6;">94%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="94%"></div></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fas fa-project-diagram"></i> Featured Works</div>
+          <h2 class="section-title">Projects & Systems</h2>
+          <p class="section-subtitle">Real-world applications engineered with focus on data modeling and space efficiency.</p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1: Interactive Dashboard -->
+          <div class="glass-card project-card">
+            <div class="project-banner">
+              <div class="project-interactive-preview">
+                <div class="preview-chart-mock">
+                  <div class="bar-mock"></div>
+                  <div class="bar-mock"></div>
+                  <div class="bar-mock"></div>
+                  <div class="bar-mock"></div>
+                  <div class="bar-mock"></div>
+                </div>
+                <div style="text-align: center; margin-top: 0.75rem; font-size: 0.75rem; color: var(--accent-cyan); font-family: var(--font-mono);">
+                  KPI Trends &bull; Dynamic Excel Model
+                </div>
+              </div>
+              <div class="project-badge-tag">EXCEL &bull; BI</div>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">Interactive Analytics Dashboard</h3>
+              <p class="project-desc">
+                Created a comprehensive, dynamic interactive business intelligence dashboard from raw unstructured datasets using advanced Microsoft Excel techniques, pivot tables, slicers, automated KPI indicators, and dynamic data modeling.
+              </p>
+
+              <ul class="project-features">
+                <li><i class="fas fa-check-circle"></i> Dynamic data filtering with multi-category interactive slicers</li>
+                <li><i class="fas fa-check-circle"></i> Automated trend forecasting and variance analysis</li>
+                <li><i class="fas fa-check-circle"></i> Clean summary reports for stakeholder decision-making</li>
+              </ul>
+
+              <div class="project-stack">
+                <span class="tech-tag">Microsoft Excel</span>
+                <span class="tech-tag">Pivot Tables</span>
+                <span class="tech-tag">Data Modeling</span>
+                <span class="tech-tag">Data Analytics</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn-card-action open-project-btn" data-project="excel">
+                  <i class="fas fa-chart-bar"></i> Launch Simulator
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Library Space Utilization Software -->
+          <div class="glass-card project-card">
+            <div class="project-banner" style="background: linear-gradient(135deg, #091823 0%, #0d2b3a 100%);">
+              <div class="project-interactive-preview">
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; width: 75%; margin: 0 auto;">
+                  <div style="background: rgba(16,185,129,0.3); border: 1px solid #10b981; border-radius: 4px; height: 32px; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; color: #10b981;">A1</div>
+                  <div style="background: rgba(239,68,68,0.3); border: 1px solid #ef4444; border-radius: 4px; height: 32px; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; color: #ef4444;">A2</div>
+                  <div style="background: rgba(16,185,129,0.3); border: 1px solid #10b981; border-radius: 4px; height: 32px; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; color: #10b981;">A3</div>
+                  <div style="background: rgba(245,158,11,0.3); border: 1px solid #f59e0b; border-radius: 4px; height: 32px; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; color: #f59e0b;">A4</div>
+                </div>
+                <div style="text-align: center; margin-top: 0.75rem; font-size: 0.75rem; color: #10b981; font-family: var(--font-mono);">
+                  Real-Time Seating Heatmap & Optimization
+                </div>
+              </div>
+              <div class="project-badge-tag" style="color: #10b981; border-color: rgba(16,185,129,0.4);">C++ &bull; PHP &bull; SQL</div>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">Library Space Utilization Software</h3>
+              <p class="project-desc">
+                Designed and engineered a software application to monitor, manage, and optimize real-time physical space and seating capacity across university library facilities, eliminating bottlenecks during peak examination periods.
+              </p>
+
+              <ul class="project-features">
+                <li><i class="fas fa-check-circle"></i> Space allocation algorithm to balance departmental footfalls</li>
+                <li><i class="fas fa-check-circle"></i> Relational database design storing real-time student check-ins</li>
+                <li><i class="fas fa-check-circle"></i> Comprehensive reporting on peak hour utilization rates</li>
+              </ul>
+
+              <div class="project-stack">
+                <span class="tech-tag">C / C++</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Space Optimization</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn-card-action open-project-btn" data-project="library">
+                  <i class="fas fa-microchip"></i> System Architecture
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements & Certifications -->
+    <section id="achievements">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fas fa-award"></i> Recognition & Credentials</div>
+          <h2 class="section-title">Achievements & Certifications</h2>
+          <p class="section-subtitle">Consistent academic distinction and verified industry technical credentials.</p>
+        </div>
+
+        <!-- Academic Rank Honors -->
+        <div class="achievements-grid">
+          
+          <div class="glass-card achievement-card">
+            <div class="achievement-icon">
+              <i class="fas fa-medal"></i>
+            </div>
+            <div class="achievement-details">
+              <h4>1st Rank in Semester 1 (L&T)</h4>
+              <p>Achieved top position across the specialized Larsen & Toubro Data Analytics program cohort in Semester 1.</p>
+            </div>
+          </div>
+
+          <div class="glass-card achievement-card">
+            <div class="achievement-icon">
+              <i class="fas fa-medal"></i>
+            </div>
+            <div class="achievement-details">
+              <h4>1st Rank in Semester 2 (L&T)</h4>
+              <p>Maintained the 1st Rank position for the second consecutive semester under the L&T specialized data track.</p>
+            </div>
+          </div>
+
+          <div class="glass-card achievement-card">
+            <div class="achievement-icon" style="color: #00f0ff; border-color: rgba(0,240,255,0.4); background: rgba(0,240,255,0.1); box-shadow: 0 0 20px rgba(0,240,255,0.2);">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <div class="achievement-details">
+              <h4>3rd Rank in Semester 2 (College)</h4>
+              <p>Secured 3rd rank across the entire college cohort with an outstanding <strong>9.10 SGPA</strong> at Dr. Subhash University.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Certifications Inner Section -->
+        <div class="certifications-section-inner">
+          <h3 style="font-family: var(--font-heading); font-size: 1.5rem; color: #fff; margin-bottom: 1.5rem; text-align: center;">
+            <i class="fas fa-certificate" style="color: var(--accent-cyan); margin-right: 0.5rem;"></i> Verified Professional Certifications
+          </h3>
+
+          <div class="cert-grid">
+            
+            <div class="glass-card cert-card">
+              <div class="cert-provider">
+                <span class="provider-tag">IBM</span>
+                <i class="fas fa-award" style="color: #3b82f6;"></i>
+              </div>
+              <h4>AI & Machine Learning Course</h4>
+              <p class="cert-desc">
+                Comprehensive training covering fundamental principles of artificial intelligence, machine learning algorithms, model evaluation, and modern AI architectures.
+              </p>
+              <div style="font-size: 0.8rem; color: var(--accent-cyan); margin-top: auto;">
+                <i class="fas fa-check-circle"></i> Verified Credential
+              </div>
+            </div>
+
+            <div class="glass-card cert-card">
+              <div class="cert-provider">
+                <span class="provider-tag">Be10X</span>
+                <i class="fas fa-award" style="color: #f59e0b;"></i>
+              </div>
+              <h4>Artificial Intelligence Course</h4>
+              <p class="cert-desc">
+                Practical coursework focusing on Generative AI, prompt engineering workflows, modern AI tools for data analysis, and integrating AI into software productivity.
+              </p>
+              <div style="font-size: 0.8rem; color: var(--accent-cyan); margin-top: auto;">
+                <i class="fas fa-check-circle"></i> Verified Credential
+              </div>
+            </div>
+
+            <div class="glass-card cert-card">
+              <div class="cert-provider">
+                <span class="provider-tag">JavaScript ES6</span>
+                <i class="fas fa-award" style="color: #10b981;"></i>
+              </div>
+              <h4>Modern JavaScript (ES6+)</h4>
+              <p class="cert-desc">
+                In-depth mastery of ECMAScript 6+ concepts: Arrow functions, Destructuring, Promises, Async/Await, Modular architecture, and modern DOM programming.
+              </p>
+              <div style="font-size: 0.8rem; color: var(--accent-cyan); margin-top: auto;">
+                <i class="fas fa-check-circle"></i> Verified Credential
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fas fa-paper-plane"></i> Get In Touch</div>
+          <h2 class="section-title">Contact & Connect</h2>
+          <p class="section-subtitle">Interested in collaborating or discussing internship and project opportunities? Reach out directly.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Info Card -->
+          <div class="glass-card contact-info-card">
+            <div>
+              <h3 style="font-family: var(--font-heading); font-size: 1.5rem; color: #fff; margin-bottom: 0.5rem;">Let's Build Something Great</h3>
+              <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
+                I am actively seeking software engineering and data analytics opportunities, internships, and research collaborations.
+              </p>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-info-meta">
+                <span>Email Address</span>
+                <a href="mailto:bajudnizam@gmail.com">bajudnizam@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fas fa-phone-alt"></i></div>
+              <div class="contact-info-meta">
+                <span>Phone / WhatsApp</span>
+                <a href="tel:+918200335213">+91 8200335213</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="contact-info-meta">
+                <span>Location</span>
+                <p>Junagadh, Gujarat, India</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div class="contact-info-meta">
+                <span>LinkedIn Profile</span>
+                <p>Nizam Bajud</p>
+              </div>
+            </div>
+
+            <button class="btn-secondary" id="copy-email-btn" style="width: 100%; justify-content: center; cursor: pointer;">
+              <i class="fas fa-copy"></i>
+              <span>Copy Email to Clipboard</span>
+            </button>
+          </div>
+
+          <!-- Contact Form Card -->
+          <div class="glass-card contact-form-card">
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Rahul Sharma" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Your Email</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="name@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject</label>
+                <input type="text" id="contact-subject" class="form-input" placeholder="Internship Opportunity / Project Inquiry">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message</label>
+                <textarea id="contact-message" class="form-textarea" placeholder="Hello Nizam, I came across your portfolio and would like to connect regarding..." required></textarea>
+              </div>
+
+              <button type="submit" class="form-submit-btn">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer & Resume Declaration -->
+    <footer class="footer">
+      <div class="container">
+        
+        <!-- Official Declaration from Resume -->
+        <div class="declaration-box">
+          <div>
+            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--accent-cyan); font-family: var(--font-mono); margin-bottom: 0.25rem;">
+              <i class="fas fa-certificate"></i> Official Declaration
+            </div>
+            <p class="declaration-text">
+              "I hereby declare that the information provided above is true and correct to the best of my knowledge."
+            </p>
+          </div>
+          <div class="signature-stamp">
+            <div class="signature-script">Nizam</div>
+            <div class="signature-name">Nizam Bajud &bull; Junagadh, Gujarat</div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 Nizam Bajud. All rights reserved. Built with 3D WebGL, Three.js & modern web standards.</p>
+          <a href="#hero" class="back-to-top">
+            <span>Back to top</span>
+            <i class="fas fa-arrow-up"></i>
+          </a>
+        </div>
+
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- HUD 3D Controls (Floating in Bottom-Right) -->
+  <div class="hud-controls">
+    <div class="hud-panel" id="hud-panel">
+      <div class="hud-panel-title">
+        <i class="fas fa-sliders-h"></i> 3D Engine Controls
+      </div>
+
+      <div class="hud-row">
+        <span>Theme Aura:</span>
+        <div class="theme-swatches">
+          <div class="swatch swatch-cyan active" data-theme="cyan" title="Cyan Nebula"></div>
+          <div class="swatch swatch-purple" data-theme="purple" title="Cyber Purple"></div>
+          <div class="swatch swatch-emerald" data-theme="emerald" title="Matrix Emerald"></div>
+        </div>
+      </div>
+
+      <div class="hud-row">
+        <span>Orbit Speed:</span>
+        <div style="display: flex; gap: 4px;">
+          <button class="speed-btn" data-speed="0.5" style="padding: 2px 6px; font-size: 0.75rem; border-radius: 4px; background: rgba(255,255,255,0.1); color: #fff;">0.5x</button>
+          <button class="speed-btn" data-speed="1" style="padding: 2px 6px; font-size: 0.75rem; border-radius: 4px; background: rgba(0,240,255,0.2); color: var(--accent-cyan); font-weight: bold;">1x</button>
+          <button class="speed-btn" data-speed="2" style="padding: 2px 6px; font-size: 0.75rem; border-radius: 4px; background: rgba(255,255,255,0.1); color: #fff;">2x</button>
+        </div>
+      </div>
+    </div>
+
+    <button class="hud-btn" id="hud-toggle" title="Customize 3D Scene" aria-label="Customize 3D Scene">
+      <i class="fas fa-cube"></i>
+    </button>
+  </div>
+
+  <!-- Interactive Project Simulator Modal -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="close-project-modal" aria-label="Close modal">
+        <i class="fas fa-times"></i>
+      </button>
+      <div id="project-modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Resume Viewer Modal -->
+  <div class="modal-overlay" id="resume-modal" role="dialog" aria-modal="true">
+    <div class="modal-content" style="max-width: 800px; text-align: center;">
+      <button class="modal-close-btn" id="close-resume-modal" aria-label="Close modal">
+        <i class="fas fa-times"></i>
+      </button>
+      <div style="margin-bottom: 1.5rem; text-align: left;">
+        <h3 style="font-family: var(--font-heading); font-size: 1.5rem; color: #fff;">Official Resume &bull; Nizam Bajud</h3>
+        <p style="font-size: 0.85rem; color: var(--text-secondary);">Verified Curriculum Vitae (BCA, Data Analytics Specialization, Dr. Subhash University)</p>
+      </div>
+
+      <div style="background: #fff; border-radius: 12px; overflow: hidden; max-height: 520px; overflow-y: auto; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+        <img src="assets/nizam_bajud_resume.jpg" alt="Nizam Bajud Resume" style="width: 100%; display: block;">
+      </div>
+
+      <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1.5rem; flex-wrap: wrap;">
+        <a href="assets/nizam_bajud_resume.jpg" download="Nizam_Bajud_Resume.jpg" class="btn-primary" style="text-decoration: none;">
+          <i class="fas fa-download"></i> Download Resume Image
+        </a>
+        <button onclick="window.print()" class="btn-secondary" style="cursor: pointer;">
+          <i class="fas fa-print"></i> Print Portfolio / Resume
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Three.js (Local with CDN fallback) -->
+  <script src="js/three.min.js"></script>
+  <script>
+    if (typeof THREE === 'undefined') {
+      document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"><\\/script>');
+    }
+  </script>
+  
+  <!-- Custom 3D Engine & Application Scripts -->
+  <script src="js/three-scene.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
